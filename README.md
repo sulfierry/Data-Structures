@@ -80,3 +80,9 @@ gcc -o sparse_program main.c matrix.c matrix_aux.c -Wall
 
 The program will print matrices after each operation, so you can verify the results. If any error occurs during operations, corresponding error messages will be displayed.
 
+The script 'run_hash_sparse.sh' will assume that:
+
+1. You are in the root folder where both "Hash-main" and "Sparse_Matrix-main" directories are located.
+2. You have GCC installed for compilation.
+3. The command-line arguments for the input files will be provided by the user when running the script.
+
