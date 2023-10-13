@@ -37,3 +37,46 @@ The program will also prompt the user to enter a new keyword and will attempt to
 5. **Viewing**:
 The full index will be printed both before and after the insertion of the new keyword.
 
+
+# Sparse Matrix Program
+
+## Overview
+
+This program demonstrates operations on sparse matrices using linked lists. It provides functionalities to create, add, multiply, transpose, and destroy matrices.
+
+## Functionalities
+
+1. **Matrix Initialization**:
+   - The program initializes three matrices: `A`, `B`, and `C`.
+
+2. **Matrix Creation**:
+   - Creates matrices `A` and `B` using the `matrix_create` function.
+   - If any error occurs during the creation, an error message is printed.
+
+3. **Matrix Addition**:
+   - Tries to add matrices `A` and `B` and store the result in matrix `C` using the `matrix_add` function.
+   - If there's an error in the addition, it will print an error message.
+
+4. **Matrix Multiplication**:
+   - Tries to multiply matrices `A` and `B` and store the result in matrix `C` using the `matrix_multiply` function.
+   - If there's an error in multiplication, an error message is printed.
+
+5. **Matrix Transposition**:
+   - Tries to transpose matrix `A` and store the result in matrix `C` using the `matrix_transpose` function.
+   - If there's an error in transposition, an error message is printed.
+
+6. **Memory Release**:
+   - Destroys matrices `A`, `B`, and `C` using the `matrix_destroy` function to release the memory.
+
+## Usage
+
+1. **Compilation**:
+gcc -o sparse_program main.c matrix.c matrix_aux.c -Wall
+
+
+2. **Execution**:
+./sparse_program
+
+
+The program will print matrices after each operation, so you can verify the results. If any error occurs during operations, corresponding error messages will be displayed.
+
